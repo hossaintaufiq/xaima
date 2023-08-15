@@ -22,3 +22,24 @@ makePink.onclick=pink;
 function pink(){
     document.body.style.backgroundColor='pink';
 }
+
+// text change
+
+document.getElementById('name-button').addEventListener('click',function(){
+    const changeName = document.getElementById('name');
+    changeName.innerText='Xaima Zaman';
+
+
+}
+)
+
+document.getElementById('post').addEventListener('click',function(){
+   const commentText= document.getElementById('comment-box');
+   const commentValue= commentText.value;
+   console.log(commentValue);
+
+
+
+   const comment-container= '';
+})
+

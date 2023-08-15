@@ -33,13 +33,23 @@ document.getElementById('name-button').addEventListener('click',function(){
 }
 )
 
-document.getElementById('post').addEventListener('click',function(){
-   const commentText= document.getElementById('comment-box');
-   const commentValue= commentText.value;
-   console.log(commentValue);
+document.getElementById('btn-post').addEventListener('click',function(){
+   const commentBox= document.getElementById('comment-box');
+   const newComment = commentBox.value;
+
+
+   const commentContainer = document.getElementById('comment-container');
+   const p = document.createElement('p');
+
+   p.innerText=newComment;
+   commentContainer.appendChild(p);
+ commentBox.value='';
+//    console.log(newComment);
+//    const commentValue= commentText.value;
+//    console.log(commentValue);
 
 
 
-   const comment-container= '';
+//    const commentContainer= '';
 })
 
